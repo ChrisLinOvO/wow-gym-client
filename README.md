@@ -1,7 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app.git)
  and Client-side rendering solution, need to connect backend server & database.
 
-Backend server repository: [Click me](https://github.com/ChrisLinOvO/project-wow-fit-backend.git)
+Backend server repository: [Click me](https://github.com/ChrisLinOvO/wow-gym-server)
 
 # 資策會 MFEE07 大專題 
 ### 複合型健身房官方網站「WoW FIT」
