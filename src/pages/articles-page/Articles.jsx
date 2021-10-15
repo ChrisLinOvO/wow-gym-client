@@ -44,7 +44,7 @@ function Articles(props) {
   //取得文章列表資料
   async function getData() {
     // 注意header資料格式要設定，伺服器才知道是json格式
-    const request = new Request("http://localhost:5000/api/articles", {
+    const request = new Request("https://wow-gym.herokuapp.com/api/articles", {
       method: "GET",
       headers: new Headers({
         Accept: "application/json",
