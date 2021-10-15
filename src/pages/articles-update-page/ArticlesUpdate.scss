@@ -1,0 +1,231 @@
+.article-update-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+  h2 {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  .article-update-left {
+    margin: 7px auto;
+    width: 500px;
+
+    .article-member-update {
+      width: 220px;
+      .article-member-avatar-update {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 50%;
+        object-position: 50% 10%;
+        padding: 2px;
+        display: block;
+        background-color: #1178b8;
+        margin: 0 10px 0 0;
+      }
+      .articleUpdateTime{
+        float: right;
+        margin-top: -60px;
+     
+    
+      }
+    }
+    .articleUpdateSelect {
+      width: 500px;
+      margin-top: 10px;
+      height: 50px;
+      padding-left: 5px;
+    }
+    .articleUpdateTagName1 {
+      width: 500px;
+      margin-top: 10px;
+      height: 50px;
+
+      padding-left: 5px;
+    }
+    .articleUpdateTagName2 {
+      width: 500px;
+      margin-top: 10px;
+      height: 50px;
+
+      padding-left: 5px;
+    }
+
+    .articleUpdateImgBox {
+      width: 100%;
+      height: 200px;
+      margin-top: 10px;
+      border: 1px solid #000000;
+      .articleUpdateImg {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+  .article-update-right {
+    margin: 0 auto;
+    width: 500px;
+
+    margin-top: 55px;
+    .articleUpdateInputTitle {
+      width: 500px;
+      margin-top: 10px;
+      height: 50px;
+
+      padding-left: 5px;
+    }
+    .articleUpdateContent {
+      width: 500px;
+      margin-top: 10px;
+      height: 385px;
+
+      padding: 5px;
+    }
+  }
+  .article-update-footer {
+    width: 100%;
+    margin-top: 10px;
+    padding: 20px;
+    margin-left: 440px;
+    .articleUpdateCancle {
+      width: 150px;
+      height: 45px;
+      margin: 0 10px;
+      border-radius: 5px;
+      background: none;
+      border: 2px solid #1178b8;
+      cursor: pointer;
+      &:hover {
+        background: #1178b8;
+        color: #ffffff;
+      }
+    }
+    .articleUpdateSubmit {
+      width: 150px;
+      height: 45px;
+      margin: 0 10px;
+      border-radius: 5px;
+      background: none;
+      border: 2px solid #1178b8;
+      cursor: pointer;
+      &:hover {
+        background: #1178b8;
+        color: #ffffff;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .article-update-container {
+    width: 100%;
+    grid-template-columns: 100%;
+    .article-update-right {
+      margin-top: 0px;
+    }
+    .article-update-footer {
+      margin-left: 220px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .article-update-container {
+    width: 100%;
+    grid-template-columns: 100%;
+    .article-update-right {
+      margin-top: 0px;
+    }
+    .article-update-footer {
+      margin-left: 120px;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .article-update-container {
+    width: 100%;
+    grid-template-columns: 100%;
+    .article-update-right {
+      margin-top: 0px;
+    }
+    .article-update-footer {
+      margin-left: 70px;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .article-update-container {
+    width: 100%;
+    grid-template-columns: 100%;
+    .article-update-left {
+      width: 400px;
+      .articleUpdateSelect {
+        width: 400px;
+      }
+      .articleUpdateTagName1 {
+        width: 400px;
+      }
+      .articleUpdateTagName2 {
+        width: 400px;
+      }
+    }
+    .article-update-right {
+      width: 400px;
+      margin-top: 0px;
+      .articleUpdateInputTitle {
+        width: 400px;
+      }
+      .articleUpdateContent {
+        width: 400px;
+      }
+    }
+    .article-update-footer {
+      margin-left: 40px;
+      .articleUpdateCancle {
+        width: 150px;
+      }
+      .articleUpdateSubmit {
+        width: 150px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .article-update-container {
+    width: 90%;
+    grid-template-columns: 100%;
+
+    .article-update-left {
+      margin-left: 30px;
+      width: 300px;
+      .articleUpdateSelect {
+        width: 300px;
+      }
+      .articleUpdateTagName1 {
+        width: 300px;
+      }
+      .articleUpdateTagName2 {
+        width: 300px;
+      }
+    }
+    .article-update-right {
+      width: 300px;
+      margin-left: 30px;
+      margin-top: 0px;
+      .articleUpdateInputTitle {
+        width: 300px;
+      }
+      .articleUpdateContent {
+        width: 300px;
+      }
+    }
+    .article-update-footer {
+      margin-left: 20px;
+      .articleUpdateCancle {
+        width: 120px;
+      }
+      .articleUpdateSubmit {
+        width: 120px;
+      }
+    }
+  }
+}

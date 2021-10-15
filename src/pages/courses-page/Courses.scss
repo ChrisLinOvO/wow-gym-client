@@ -1,0 +1,87 @@
+.coursesWrapper {
+  // max-width: 1260px;
+  width: 100%;
+  margin: 0 auto;
+
+  .coursesContainer {
+    width: 100%;
+    margin: 0 auto;
+
+    .courseBannerContainer {
+      width: 100%;
+      display: flex;
+      // margin: 0 auto;
+      position: relative;
+
+      .courseBanner {
+        margin: 0 auto;
+        width: 100%;
+        height: 350px;
+        background: url(https://i.ibb.co/sPcg1dc/banner.jpg) 100%;
+        opacity: 0.5;
+      }
+
+      h1 {
+        position: absolute;
+        top: 43%;
+        font-size: 2.2rem;
+      }
+    }
+
+    .container {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .coursesWrapper {
+    width: 100%;
+
+    .coursesContainer {
+      width: 100%;
+
+      .courseBannerContainer {
+        .courseBanner {
+          width: 100%;
+        }
+      }
+
+      .container {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .coursesWrapper {
+    width: 100%;
+
+    .coursesContainer {
+      width: 100%;
+      margin: 0 auto;
+
+      .courseBannerContainer {
+        width: 100%;
+        // display: none;
+
+        .courseBanner {
+          width: 100%;
+          height: 200px;
+          background: url(https://i.ibb.co/sPcg1dc/banner.jpg) no-repeat;
+          background-size: cover;
+          // object-fit: cover;
+          margin: 0 auto;
+        }
+
+        .categoryTitle {
+          margin: 0 auto;
+          font-size: 1rem;
+          top: 45%;
+        }
+      }
+    }
+  }
+}

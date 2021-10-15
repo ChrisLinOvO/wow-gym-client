@@ -1,0 +1,79 @@
+.filter-button-container {
+  position: relative;
+
+  .filter-button {
+    cursor: pointer;
+    // width: 50px;
+    border: none;
+    color: black;
+    background-color: transparent;
+    span {
+      margin-right: 2px;
+      font-size: 16px;
+    }
+    &:hover {
+      text-decoration: underline;
+      color: plum;
+    }
+  }
+
+  .filter-dropdown {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 100px;
+    height: 70px;
+    background-color: white;
+    border: 1px black solid;
+    z-index: 3;
+
+    &.filter-dropdown-custom {
+      height: 120px;
+
+      .cancel-filter-li {
+        bottom: 20px;
+        width: 100%;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        cursor: default;
+        span {
+          cursor: pointer;
+          font-size: 12px;
+          padding-bottom: 3px;
+          border-bottom: 1px solid transparent;
+          transition: all 0.5s;
+          &:hover {
+            border-bottom: 1px solid blueviolet;
+          }
+        }
+      }
+    }
+
+    ul {
+      list-style: none;
+      color: black;
+      .filter-list {
+        margin: 10px 0 10px 10px;
+        cursor: pointer;
+        &:hover {
+          color: blueviolet;
+          //   font-weight: bolder;
+        }
+      }
+      .price-selected {
+        color: blueviolet;
+        font-weight: bold;
+      }
+
+      .selected {
+        color: blueviolet;
+        font-weight: 600;
+      }
+      .disabled {
+        pointer-events: none; //This makes it not clickable
+        opacity: 0.6; //This grays it out to look disabled
+      }
+    }
+  }
+}

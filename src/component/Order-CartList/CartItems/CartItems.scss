@@ -1,0 +1,33 @@
+.quan {
+  color: black;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  cursor: pointer;
+  li {
+
+    font-size: 18px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .icon-left{
+     margin-bottom: 8px;
+  }
+}
+
+.text {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+}
+.content-wrap-ul-ls {
+  padding: 60px;
+  grid-template-columns: 1fr;
+  list-style: none;
+}
+.content-wrap-ul {
+  background-color: transparent !important;
+}

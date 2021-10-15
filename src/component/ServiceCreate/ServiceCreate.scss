@@ -1,0 +1,173 @@
+.create-title-box {
+    margin: 0.5rem 0 1rem;
+    .h3-span {
+        color: #1178b8;
+    }
+}
+
+.create-list-box {
+    margin: 1rem 1rem 1rem 0;
+    .create-select-list {
+        width: 70%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: 0.5rem;
+        .create-list-select-box {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            height: 1.5rem;
+            margin: 2rem 0.5rem 1rem 0;
+            .select-question {
+                height: 1.5rem;
+                width: 11rem;
+                border: 0;
+                outline: 0;
+                background: transparent;
+                border-bottom: 1px solid #aaa;
+                color: #aaa;
+                padding-left: 5px;
+                
+            }
+        }
+        .input-Question {
+            border: 0;
+            outline: 0;
+            background: transparent;
+            border-bottom: 1px solid #aaa;
+            height: 1.5rem;
+            width: 11rem;
+            margin: 1.75rem 1rem 1rem 0;
+            padding-left: 5px;
+        }
+    }
+}
+
+.create-list-input-box {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0.5rem;
+    .input-Question {
+        border: 0;
+        outline: 0;
+        background: transparent;
+        border-bottom: 1px solid #aaa;
+        height: 1.5rem;
+        width: 11rem;
+        margin: 1rem 1rem 1rem 0;
+        padding-left: 5px;
+    }
+}
+
+.create-Question-text-box {
+    margin: 2rem 0;
+    .Question-text {
+        width: 55%;
+        margin: 0 0.5rem;
+        resize: none;
+        padding-left: 5px;
+    }
+}
+
+.button-box {
+    width: 32rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    .create-delete-btn {
+        background: #fff;
+        border: 1px solid;
+        border-radius: 5px;
+        height: 2rem;
+        width: 16rem;
+        margin: 1rem 4rem;
+        cursor: pointer;
+    }
+
+    .create-post-btn {
+        background: #1178b8;
+        border: 1px solid #1178b8;
+        border-radius: 5px;
+        height: 2rem;
+        width: 16rem;
+        margin: 1rem 4rem;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+// .h3-span {
+//     color: #1178b8;
+// }
+
+// .select-box {
+//     width: 70%;
+//     margin-top: 0.75rem;
+//     border: 1px solid rgb(204, 204, 204);
+//     background: rgb(236, 236, 236);
+//     padding-top: 1rem;
+
+//     .select-question-box {
+//         width: 89%;
+//         height: 2rem;
+//         margin: 1rem 2rem;
+//         border: 1px solid rgb(204, 204, 204);
+//         font-size: 12px;
+//     }
+
+//     .input-Question {
+//         width: 89%;
+//         height: 2rem;
+//         margin: 1rem 2rem;
+//         border: 1px solid rgb(204, 204, 204);
+//         font-size: 12px;
+//         padding-left: 5px;
+//     }
+//     .input-Question::placeholder{
+//         color:#444141;
+//     }
+//     .Question-text {
+//         width: 89%;
+//         max-width: 89%;
+//         height: 10rem;
+//         max-height: 12rem;
+//         margin: 1rem 2rem;
+//         border: 1px solid rgb(204, 204, 204);
+//         padding-left: 5px;
+//     }
+//     .Question-text::placeholder{
+//         color:#444141;
+//     }
+//     .button-box {
+//         max-width: 100%;
+//         display: flex;
+//         justify-content: center;
+//         padding: 0.625rem 1.35rem;
+//         margin: 0 auto;
+
+//         .create-delete-btn{
+//             cursor: pointer;
+//             width: 6.25rem;
+//             height: 2rem;
+//             margin-right: 2rem;
+//             border: 1px solid #4e4e4e;
+//             background: #d4d4d4;
+//             color: #4e4e4e;
+//             &:hover {
+//                 background: darken(#d4d4d4, 10%);
+//             }
+//         }
+//         .create-post-btn {
+//             cursor: pointer;
+//             width: 6.25rem;
+//             height: 2rem;
+//             border: 1px solid rgb(14, 4, 4);
+//             background: #1178b8;
+//             color: rgb(255, 255, 255);
+//             &:hover {
+//                 background: darken(#1178b8, 6%);
+//             }
+//         }
+//     }
+// }

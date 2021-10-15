@@ -1,0 +1,82 @@
+.userCourseContainer {
+  width: 100%;
+  margin-top: 20px;
+  // height: calc(100vh - 284px);
+}
+.userMyCoursesContainer {
+  width: 100%;
+  // height: 650px;
+  // border: 1px solid black;
+  .userCorsesBtnContainer {
+    // margin: 5px;
+
+    .bookedBtn,
+    .canceledBtn,
+    .finishedBtn {
+      border: 3px solid #1178b8;
+      border-radius: 5px;
+      background: white;
+      padding: 5px;
+      margin: 0 5px 0 0;
+      cursor: pointer;
+    }
+    .bookedBtn:hover,
+    .canceledBtn:hover,
+    .finishedBtn:hover {
+      background: #1178b8;
+      color: white;
+    }
+  }
+  .userCoursesTitle {
+    display: flex;
+    list-style: none;
+    margin: 10px 0;
+    justify-content: space-around;
+    li {
+      font-size: 1.1rem;
+      width: 17%;
+      text-align: center;
+      padding: 0.5rem;
+    }
+  }
+}
+@media screen and (max-width: 1260px) {
+  
+  .userMyCoursesContainer {
+    width: 100%;
+    // height: 650px;
+    // border: 1px solid black;
+    .userCorsesBtnContainer {
+      // margin: 5px;
+
+      .bookedBtn,
+      .canceledBtn,
+      .finishedBtn {
+        border: 3px solid #1178b8;
+        border-radius: 5px;
+        background: white;
+        padding: 5px;
+        margin: 0 5px 0 0;
+        cursor: pointer;
+      }
+      .bookedBtn:hover,
+      .canceledBtn:hover,
+      .finishedBtn:hover {
+        background: #1178b8;
+        color: white;
+      }
+    }
+    .userCoursesTitle {
+      display: grid;
+      grid-template-columns: auto auto auto auto auto auto;
+      list-style: none;
+      margin: 10px 0;
+      li {
+        font-size: 1.1rem;
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem;
+      }
+    }
+  }
+}

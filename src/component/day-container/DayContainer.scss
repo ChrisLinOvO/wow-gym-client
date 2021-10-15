@@ -1,0 +1,49 @@
+.dayContainer {
+  // width:100%/7;
+  text-align: center;
+
+  .day {
+    width: 95%;
+    height: 50px;
+    line-height: 50px;
+    background: #1178B8;
+    border: 1px solid #1178B8;
+    color: white;
+    font-size: 1.25rem;
+    margin: 2.5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dayContainer {
+    .day {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .courseBoxWrapper {
+
+      .courseBoxContainer {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        // justify-content: space-around;
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .dayContainer {
+
+    .courseBoxWrapper {
+
+      .courseBoxContainer {
+        grid-template-columns: repeat(2, 1fr);
+        // grid-template-rows: 1fr 1fr;
+      }
+    }
+  }
+}

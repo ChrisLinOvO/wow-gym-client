@@ -1,0 +1,208 @@
+.employeeCenterPage {
+  width: 1260px;
+  margin: 0 auto;
+  .center-top {
+    width: 70%;
+    height: 20vh;
+
+    .centertop-box {
+      width: 80%;
+      display: flex;
+      align-items: center;
+      margin-left: 30px;
+
+      .centerpeople-box-top {
+        display: flex;
+        align-items: center;
+        margin-left: 120px;
+
+        .centerpeople-content-top {
+          display: flex;
+          align-items: center;
+          font-size: 22px;
+          margin-left: 20px;
+
+          .top-title {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+
+    .people-top {
+      width: 7vw;
+      height: 7vw;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .addcourse {
+      margin: 10px;
+      color: #1178b8;
+      border: 2px solid #1178b8;
+      background: transparent;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 16px;
+
+      &:hover {
+        background: #1178b8;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .box {
+    width: 1260px;
+    margin: 0 auto;
+    display: flex;
+
+    .right {
+      width: 30%;
+      height: 110vh;
+      background: #dfdede;
+      position: relative;
+
+      .people-box-right {
+        height: 15%;
+        display: flex;
+        justify-content: center;
+
+        .people-right {
+          width: 12vw;
+          height: 12vw;
+          border-radius: 50%;
+          position: absolute;
+          top: -15%;
+          object-fit: cover;
+        }
+
+        .people-content-right {
+          margin-top: 100px;
+
+          .right-title {
+            font-size: 22px;
+          }
+        }
+      }
+
+      .data {
+        padding: 10px;
+      }
+
+      .expertise {
+        padding: 0 50px 10px 20px;
+
+        .license-title {
+          margin-bottom: 3px;
+          font-size: 22px;
+        }
+
+        .license {
+          margin-bottom: 50px;
+          color: rgb(80, 79, 79);
+        }
+      }
+    }
+
+    .left {
+      width: 70%;
+      margin: 0 auto;
+
+      .left-box {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 0 20px;
+
+        .course {
+          width: 13vw;
+          height: 17vw;
+          background: #f3f2f2;
+          box-shadow: 0 1px 1px rgb(182, 181, 181);
+          text-align: center;
+          position: relative;
+          margin: 0 10px 50px 10px;
+
+          .course-container-img {
+            width: 100%;
+            height: 10vw;
+
+            .course-img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+
+          .coursename {
+            margin: 5px 0;
+            font-size: 16px;
+          }
+          .course-edit {
+            width: 5vw;
+            padding: 3px 0;
+            position: absolute;
+            bottom: 5%;
+            left: 5%;
+            color: #1178b8;
+            border: 2px solid #1178b8;
+            background: transparent;
+            border-radius: 5px;
+
+            &:hover {
+              background: #1178b8;
+              color: white;
+              cursor: pointer;
+            }
+          }
+
+          .course-delete {
+            width: 5vw;
+            padding: 3px 0;
+            position: absolute;
+            bottom: 5%;
+            right: 5%;
+            color: #1178b8;
+            border: 2px solid #1178b8;
+            background: transparent;
+            border-radius: 5px;
+
+            &:hover {
+              background: #1178b8;
+              color: white;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .center-box {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .center-box {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .center-box {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .center-box {
+    width: 100%;
+  }
+}

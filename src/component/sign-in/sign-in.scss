@@ -1,0 +1,73 @@
+.sign-in {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  .sign-in-title {
+    margin: 10px 0;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      width: 47%;
+    }
+
+    .google-sign-link {
+      width: 100%;
+      height: 100%;
+      line-height: 40px;
+      color: rgb(190, 55, 6);
+
+      i {
+        padding-right: 5px;
+        border-right: 4px rgb(190, 55, 6) solid;
+      }
+
+      span {
+        font-size: 12px;
+        margin-left: 15px;
+      }
+
+      &:hover {
+        color: rgb(150, 10, 168);
+        i {
+          border-right: 4px rgb(150, 10, 168) solid;
+        }
+      }
+    }
+  }
+  .unValid-backdrop {
+    opacity: 0.4;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sign-in {
+    width: 300px;
+
+    .buttons {
+      flex-direction: column;
+      align-items: center;
+
+      button {
+        width: 80%;
+        margin-bottom: 15px;
+      }
+      .google-sign-link {
+        padding-right: 40px;
+        span {
+          margin-left: 40px;
+        }
+      }
+    }
+  }
+}

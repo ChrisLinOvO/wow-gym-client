@@ -1,0 +1,291 @@
+.edit {
+  height: calc(100vh - 304px);
+  .edit-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 2vh;
+  }
+  .edit-account {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  .form-wrapper {
+    display: flex;
+    input {
+      border: none;
+      width: 180px;
+      margin: 5px;
+      font-size: 16px;
+      font-family: 微軟正黑體;
+      outline: none;
+    }
+    select {
+      border: none;
+      width: 180px;
+      margin: 5px;
+      font-size: 16px;
+      font-family: 微軟正黑體;
+    }
+
+    .left-form {
+      flex: 2;
+
+      .first-line {
+        display: flex;
+        margin: 3vh 0;
+        fieldset {
+          padding: 0px 5px;
+          border: 1px solid #ccc;
+          border-radius: 10px;
+          width: 5vw;
+          margin: 5px;
+          margin-right: 1vw;
+          &:hover {
+            border: 2px solid #fecc2f;
+            legend {
+              font-weight: bold;
+            }
+          }
+          legend {
+            font-size: 14px;
+            padding: 0 5px;
+          }
+          .address-input {
+            width: 410px;
+            height: 10vh;
+          }
+        }
+      }
+    }
+
+    .right-form {
+      flex: 1;
+      border-left: 2px solid #ccc;
+      padding-left: 5vw;
+
+      .img-card {
+        width: auto;
+        margin-bottom: 20px;
+        .user-img-input {
+          width: 15vw;
+          text-align: center;
+          margin-top: 20px;
+        }
+        .user-img {
+          display: block;
+          height: auto;
+          width: 150px;
+          height: 150px;
+          margin: 0px;
+          object-fit: cover;
+          object-position: center center;
+          border-radius: 50%;
+        }
+        p {
+          text-align: left;
+          margin: 10px 0;
+          font-size: 16px;
+          color: #4d4d4d;
+        }
+      }
+      .pwd-card {
+        fieldset {
+          padding: 0px 5px;
+          border: 1px solid #ccc;
+          border-radius: 10px;
+          width: 5vw;
+          margin: 10px;
+          margin-right: 1vw;
+          &:hover {
+            border: 2px solid #fecc2f;
+            legend {
+              font-weight: bold;
+            }
+          }
+          legend {
+            font-size: 14px;
+            padding: 0 5px;
+          }
+        }
+        .pwd-input {
+          padding: 5px 5px;
+        }
+
+        button {
+          font-size: 18px;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .edit {
+    height: 100%;
+    .form-wrapper {
+      display: grid;
+      grid-template-rows: auto auto;
+      input {
+        width: 90%;
+      }
+      select {
+        width: 90%;
+      }
+      .left-form {
+        .first-line {
+          display: grid;
+          grid-template-columns: auto auto;
+          fieldset {
+            width: 30vw;
+            &:hover {
+              legend {
+              }
+            }
+            legend {
+            }
+            .address-input {
+              width: 60vw;
+              height: 3vh;
+            }
+          }
+        }
+      }
+      .right-form {
+        width: 100%;
+        border-left: 0px solid #ccc;
+        border-top: 2px solid #ccc;
+        padding: 0;
+        padding-top: 3vh;
+
+        .img-card {
+          text-align: center;
+          .user-img-input {
+            width: 200px;
+          }
+          .user-img {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+          }
+          p {
+            margin: 0 auto;
+            text-align: center;
+          }
+        }
+        .pwd-card {
+          text-align: center;
+          fieldset {
+            margin: 10px auto;
+            width: 50%;
+            &:hover {
+              legend {
+              }
+            }
+            legend {
+            }
+          }
+          .pwd-input {
+          }
+          button {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .edit {
+    .form-wrapper {
+      .left-form {
+        .first-line {
+          fieldset {
+            &:hover {
+            }
+
+            .address-input {
+              width: 65vw;
+            }
+          }
+        }
+      }
+      .right-form {
+        width: 100%;
+        border-left: 0px solid #ccc;
+        border-top: 2px solid #ccc;
+        padding: 0;
+        padding-top: 3vh;
+
+        .img-card {
+          text-align: center;
+          .user-img-input {
+            width: 200px;
+          }
+          .user-img {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+          }
+          p {
+            margin: 0 auto;
+            text-align: center;
+          }
+        }
+        .pwd-card {
+          text-align: center;
+          fieldset {
+            margin: 10px auto;
+            width: 80%;
+            &:hover {
+              legend {
+              }
+            }
+            legend {
+            }
+          }
+          .pwd-input {
+          }
+          button {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .edit {
+    .form-wrapper {
+      input {
+        width: 90%;
+      }
+      select {
+        width: 90%;
+      }
+      .left-form {
+        .first-line {
+          align-items: center;
+          grid-template-columns: none;
+          grid-template-rows: auto auto;
+          fieldset {
+            width: 80vw;
+            margin-top: 20px;
+            &:hover {
+              legend {
+              }
+            }
+            legend {
+            }
+            .address-input {
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,134 @@
+.user-center-page-wrapper {
+  display: grid;
+  color: black;
+  margin: 10px 0 40px 0;
+  font-family: 微軟正黑體;
+  grid-template-columns: 20% auto;
+  .user-sidebar {
+    height: calc(100vh - 254px);
+    text-align: center;
+    position: relative;
+    padding: 15px;
+    border-right: 2px solid #ccc;
+    margin-right: 1vw;
+    .sidebar-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 20px;
+    }
+    .drop-down-menu {
+      li {
+        margin: 0 auto;
+        a {
+          font-size: 24px;
+          font-weight: bold;
+          margin: 20px;
+        }
+        ul {
+          /*隱藏次選單*/
+          display: none;
+        }
+      }
+      li:hover ul {
+        /* 滑鼠滑入展開次選單*/
+        display: flex;
+      }
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 30px;
+
+      .nav-button {
+        font-family: 微軟正黑體;
+        font-size: 18px;
+        outline: none;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        margin-top: 20px;
+        transition: 0.1s;
+      }
+      .nav-button:hover {
+        font-weight: bold;
+        font-size: 20px;
+        background: #fecc2f;
+        border-radius: 5px;
+        padding: 5px;
+      }
+    }
+  }
+  .user-right {
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 1260px) {
+  .user-center-page-wrapper {
+    grid-template-columns: 25% auto;
+    .user-sidebar {
+      .sidebar-title {
+        margin: 0px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .user-center-page-wrapper {
+    height: 100%;
+    grid-template-columns: none;
+    grid-template-rows: auto auto;
+
+    .user-sidebar {
+      height: 100%;
+      border-right: 0px solid #ccc;
+      margin: 0 auto;
+      border-bottom: 2px solid #ccc;
+      .sidebar-title {
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .center-line {
+        display: none;
+      }
+
+      ul {
+        display: flex;
+        .nav-button {
+          font-size: 16px;
+          font-weight: bold;
+          // margin: 3px;
+          // border: 1px solid black;
+          padding: 5px;
+          border-radius: 5px;
+        }
+      }
+    }
+    .user-right {
+      margin-top: 20px;
+      display: block;
+      width: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .user-center-page-wrapper {
+    .user-sidebar {
+      width: auto;
+      .sidebar-title {
+        width: 80vw;
+      }
+
+      ul {
+        display: none;
+        .nav-button {
+          &:hover {
+          }
+        }
+      }
+    }
+    .user-right {
+      width: auto;
+    }
+  }
+}

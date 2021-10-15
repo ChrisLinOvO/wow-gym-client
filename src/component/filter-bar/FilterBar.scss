@@ -1,0 +1,14 @@
+.filter-bar {
+  // width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 350px) {
+  .filter-bar-itemtype {
+    margin-left: 15px;
+    width: 60%;
+  }
+}

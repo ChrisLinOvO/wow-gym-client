@@ -1,0 +1,144 @@
+.custom-button {
+  //   min-width: 165px;
+  //   width: auto;
+  border: none;
+  width: 40%;
+  min-height: 40px;
+  letter-spacing: 0.5px;
+  //   line-height: 45px;
+  font-size: 16px;
+  background-color: transparent;
+  // border: #1178b8 3px solid;
+  // border-radius: 10px;
+  // color: #1178b8;
+  text-transform: uppercase;
+  font-family: "Open Sans Condensed";
+  font-weight: bolder;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:focus {
+    outline: 2px dotted #1178b8;
+  }
+  // &:hover {
+  //   background-color: #1178b8;
+  //   color: white;
+  // }
+
+  &.shop-count-btn {
+    width: 30%;
+    height: 40px;
+  }
+  &.sign-in-btn {
+    width: 90px;
+    color: white;
+    font-weight: bolder;
+    margin-right: 20px;
+    height: 35px;
+  }
+  &.mobile-mode {
+    display: none;
+    color: black;
+    position: absolute;
+    bottom: 10%;
+    left: calc(50% - 35px);
+  }
+  &.error-model-btn {
+    width: 70px;
+    height: 30px;
+    color: black;
+    border-radius: 5px;
+    // border: none;
+  }
+  &.google-signin {
+    color: rgb(190, 55, 6);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .custom-button {
+    &.unmobile-mode {
+      display: none;
+    }
+    &.mobile-mode {
+      display: block;
+    }
+  }
+}
+//=== Drawing effect
+@mixin btn-border-drawing(
+  $color: #ccc,
+  $hover: black,
+  $width: 2px,
+  $vertical: top,
+  $horizontal: left,
+  $duration: 0.25s
+) {
+  box-shadow: inset 0 0 0 $width $color;
+  color: $color;
+  transition: color $duration $duration/3;
+  position: relative;
+
+  &::before,
+  &::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+
+    #{$vertical}: 0;
+    #{$horizontal}: 0;
+  }
+
+  &::before {
+    $h-side: if($horizontal == "left", "right", "left");
+
+    border-#{$vertical}-width: $width;
+    border-#{$h-side}-width: $width;
+  }
+
+  &::after {
+    $v-side: if($vertical == "top", "bottom", "top");
+
+    border-#{$v-side}-width: $width;
+    border-#{$horizontal}-width: $width;
+  }
+
+  &:hover {
+    color: $hover;
+
+    &::before,
+    &::after {
+      border-color: $hover;
+      transition: border-color 0s, width $duration, height $duration;
+      width: 100%;
+      height: 100%;
+    }
+
+    &::before {
+      transition-delay: 0s, 0s, $duration;
+    }
+
+    &::after {
+      transition-delay: 0s, $duration, 0s;
+    }
+  }
+}
+
+.draw-border {
+  @include btn-border-drawing(#d3ab2a, #1178b8, 4px, bottom, right);
+}
+
+.google-draw-border {
+  @include btn-border-drawing(
+    rgb(190, 55, 6),
+    rgb(150, 10, 168),
+    4px,
+    bottom,
+    right
+  );
+}

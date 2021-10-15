@@ -1,0 +1,41 @@
+.courseBtn{
+    width:60%;
+    display: inline-block;
+    transition: .5;
+    margin:0 0 5px 0;
+    // padding:0 25px;
+    font-weight: bold;
+}
+.accessBooking{
+    border: 3px solid #90B44B;
+    border-radius: 5px;
+    background: white;
+    color: #6a8636 !important;
+    cursor: pointer;
+}
+.accessBooking:hover{
+    background:#90B44B;
+    color: black !important; 
+   ;
+}
+.canceledBooked{
+    border: 3px solid #F7D94C;
+    border-radius: 5px;
+    background: #F7D94C;
+    color: black !important;
+}
+.alreadyBooked{
+    border: 3px solid #1178B8;
+    border-radius: 5px;
+    background: transparent;
+    color: #1178B8 !important;
+    cursor: pointer;
+}
+.alreadyBooked:hover{
+    border: 3px solid #1178B8;
+    border-radius: 5px;
+    background: #1178B8;
+    color: white !important;
+    cursor: pointer;
+}
+

@@ -1,0 +1,101 @@
+@import "../Order-CartList/CartList.scss";
+@import "../../pages/orders-list-page/OrdessrList.scss";
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Noto+Sans+TC:wght@500;900&display=swap");
+
+.container-class {
+  font-family: "Bangers", cursive;
+  font-family: "Noto Sans TC", sans-serif;
+  .confirm-button-class {
+    font-family: "Bangers", cursive !important;
+    font-family: "Noto Sans TC", sans-serif !important;
+  }
+  .header-class{
+    width: 355px;
+    height: 150px;
+    margin:0 auto;
+  }
+
+  .cancel-button-class {
+    font-family: "Bangers", cursive !important;
+    font-family: "Noto Sans TC", sans-serif !important;
+  }
+  .actions-class{
+
+    margin-top:50px;
+  }
+ 
+}
+
+.step2-active-extend {
+  @extend .step2-active;
+  background-position: -288px -68px;
+}
+
+.content-list-detail-input {
+  border: 1px solid #e8e8e8;
+  padding: 0 0 0 10px;
+  display: block;
+  height: 40px;
+}
+
+.content-list-detail-select {
+  border: 1px solid #e8e8e8;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.content-list-detail {
+  margin-top: 10px;
+  display: grid;
+  padding: 15px;
+  grid-gap: 18px;
+  background-color: transparent !important;
+}
+.content-list-title {
+  text-align: left;
+  display: block;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 10px;
+  padding: 15px 15px 15px 15px;
+  font-size: 26px;
+}
+
+.content-wrap-Checkoutpage {
+  border-bottom: 1px solid #e8e8e8;
+  width: 70%;
+  text-align: center;
+  margin-right: 20px;
+  font-family: "Bangers, cursive", cursive;
+}
+
+.detail-select {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 23px;
+}
+.content-wrap-Checkoutpage-recipient-district {
+  @extend .content-wrap-Checkoutpage;
+  margin: 0;
+  width: 100%;
+  padding: 15px;
+  font-family: "Bangers, cursive", cursive;
+}
+.recipient-district-input {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+.recipient-district-input input {
+  width: 23px;
+  height: 23px;
+  margin-top: 7px;
+  margin-right: 20px;
+}
+.CheckOuttitle {
+  width: 100%;
+  background-image: url(https://images4.alphacoders.com/692/692043.jpg);
+  background-position: bottom left;
+  height: 160px;
+  color: rgb(255, 255, 255);
+  font-family: "Bangers, cursive", cursive;
+}

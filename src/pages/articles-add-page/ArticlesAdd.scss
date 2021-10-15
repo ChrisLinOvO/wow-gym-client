@@ -1,0 +1,230 @@
+.article-add-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+
+  h2 {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  .article-add-left {
+    margin: 5px auto;
+    width: 500px;
+
+    .article-member-add {
+      width: 120px;
+      .article-member-avatar {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 50%;
+        object-position: 50% 10%;
+        padding: 2px;
+        display: block;
+        background-color: #1178b8;
+        margin: 0 10px 0 0;
+      }
+      h2 {
+        margin-top: -50px;
+        float: right;
+      }
+    }
+    .articleAddSelect {
+      width: 500px;
+      margin-top: 10px;
+      height: 50px;
+      padding-left: 5px;
+    }
+    .articleAddTagName1 {
+      width: 500px;
+      margin-top: 10px;
+      height: 50px;
+
+      padding-left: 5px;
+    }
+    .articleAddTagName2 {
+      width: 500px;
+      margin-top: 10px;
+      height: 50px;
+
+      padding-left: 5px;
+    }
+
+    .articleAddImgBox {
+      width: 100%;
+      height: 200px;
+      margin-top: 10px;
+      border: 1px solid #000000;
+      .articleAddImg {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+  .article-add-right {
+    margin: 0 auto;
+    width: 500px;
+
+    margin-top: 55px;
+    .articleAddInputTitle {
+      width: 500px;
+      margin-top: 10px;
+      height: 50px;
+
+      padding-left: 5px;
+    }
+    .articleAddContent {
+      width: 500px;
+      margin-top: 10px;
+      height: 385px;
+
+      padding: 5px;
+    }
+  }
+  .article-add-footer {
+    width: 100%;
+    margin-top: 10px;
+    padding: 20px;
+    margin-left: 440px;
+    .articleAddCancle {
+      width: 150px;
+      height: 45px;
+      margin: 0 10px;
+      border-radius: 5px;
+      background: none;
+      border: 2px solid #1178b8;
+      cursor: pointer;
+      &:hover {
+        background: #1178b8;
+        color: #ffffff;
+      }
+    }
+    .articleAddSubmit {
+      width: 150px;
+      height: 45px;
+      margin: 0 10px;
+      border-radius: 5px;
+      background: none;
+      border: 2px solid #1178b8;
+      cursor: pointer;
+      &:hover {
+        background: #1178b8;
+        color: #ffffff;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .article-add-container {
+    width: 100%;
+    grid-template-columns: 100%;
+    .article-add-right {
+      margin-top: 0px;
+    }
+    .article-add-footer {
+      margin-left: 220px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .article-add-container {
+    width: 100%;
+    grid-template-columns: 100%;
+    .article-add-right {
+      margin-top: 0px;
+    }
+    .article-add-footer {
+      margin-left: 120px;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .article-add-container {
+    width: 100%;
+    grid-template-columns: 100%;
+    .article-add-right {
+      margin-top: 0px;
+    }
+    .article-add-footer {
+      margin-left: 70px;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .article-add-container {
+    width: 100%;
+    grid-template-columns: 100%;
+    .article-add-left {
+      width: 400px;
+      .articleAddSelect {
+        width: 400px;
+      }
+      .articleAddTagName1 {
+        width: 400px;
+      }
+      .articleAddTagName2 {
+        width: 400px;
+      }
+    }
+    .article-add-right {
+      width: 400px;
+      margin-top: 0px;
+      .articleAddInputTitle {
+        width: 400px;
+      }
+      .articleAddContent {
+        width: 400px;
+      }
+    }
+    .article-add-footer {
+      margin-left: 40px;
+      .articleAddCancle {
+        width: 150px;
+      }
+      .articleAddSubmit {
+        width: 150px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .article-add-container {
+    width: 90%;
+    grid-template-columns: 100%;
+
+    .article-add-left {
+      width: 300px;
+      margin-left: 30px;
+      .articleAddSelect {
+        width: 300px;
+      }
+      .articleAddTagName1 {
+        width: 300px;
+      }
+      .articleAddTagName2 {
+        width: 300px;
+      }
+    }
+    .article-add-right {
+      margin-left: 30px;
+      width: 300px;
+      margin-top: 0px;
+      .articleAddInputTitle {
+        width: 300px;
+      }
+      .articleAddContent {
+        width: 300px;
+      }
+    }
+    .article-add-footer {
+      margin-left: 20px;
+      .articleAddCancle {
+        width: 120px;
+      }
+      .articleAddSubmit {
+        width: 120px;
+      }
+    }
+  }
+}

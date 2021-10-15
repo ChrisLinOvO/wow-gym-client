@@ -1,0 +1,47 @@
+
+.wrapper{
+    max-width: 1260px;
+}
+.coachBanner {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    background:url(https://i.ibb.co/CMMr6zY/banner2.jpg) center center;
+    opacity: .5;
+    object-fit: contain;
+}
+.coachBannerCover{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-10%);
+
+    h1 {
+        margin: 0 auto;
+        // line-height: 350px;
+        font-size: 2.2rem
+    }
+}
+
+.coachContainer {
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (max-width: 375px) {
+
+    .coachWrapper{
+        max-width: 90%;
+    .coachBanner {
+        height:250px;
+    }
+    .coachBannerCover {
+        transform: translateY(0);
+
+        h1{
+            font-size: 1.3rem;
+        }
+    }
+}
+}

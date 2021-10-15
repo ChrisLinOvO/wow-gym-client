@@ -1,0 +1,14 @@
+.like-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+
+  .like-count {
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    top: 30%;
+  }
+}

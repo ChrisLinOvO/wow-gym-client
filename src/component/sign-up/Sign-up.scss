@@ -1,0 +1,34 @@
+.sign-up {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  .sign-up-title {
+    margin: 10px 0;
+  }
+  .unValid-backdrop {
+    opacity: 0.4;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sign-up {
+    width: 300px;
+
+    button {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}

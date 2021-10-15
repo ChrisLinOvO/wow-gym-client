@@ -1,0 +1,18 @@
+.PaymentForm {
+  display: flex;
+  width: 450px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  justify-self: flex-start;
+  flex-wrap: wrap;
+
+}
+.creditcard-main {
+  margin-top: 10px;
+  margin-left: 55px;
+  justify-self: center;
+
+  input {
+    margin: 5px;
+  }
+}

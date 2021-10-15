@@ -1,0 +1,31 @@
+.coachList {
+    margin: 50px auto 100px auto;
+    width: 100%;
+    // border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 50px;
+}
+
+@media (max-width: 1024px) {
+    .coachList {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .coachList {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 375px) {
+    .coachList {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 0.5rem;
+        grid-row-gap: 1.5rem;
+        margin: 1.5rem auto;
+
+    }
+}

@@ -1,0 +1,211 @@
+.articles-container {
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+
+  // Go to top btn--------------
+  #clickreturn {
+    display: none;
+  }
+  #clickreturn.show {
+    display: block;
+    position: fixed;
+    font-size: 60px;
+    right: 1vw;
+    color: #4d4d4d;
+    top: calc(100vh - 134px);
+    &:hover {
+      color: #fecc2f;
+    }
+  }
+
+  .articleCategory {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 80%;
+    .articleCategoryButton {
+      width: 100px;
+      height: 40px;
+      border-radius: 5px;
+      background: none;
+      border: 2px solid #1178b8;
+      cursor: pointer;
+      &:hover {
+        background: #1178b8;
+        color: #ffffff;
+      }
+    }
+  }
+  .articleHomePageAdd {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    .articleHomePageAdd-btn {
+      width: 100px;
+      height: 40px;
+      position: absolute;
+      right: 0;
+      top: 20px;
+      background: none;
+      border: 2px solid #1178b8;
+      cursor: pointer;
+      border-radius: 3px;
+      &:hover {
+        background: #1178b8;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .article-page {
+    display: flex;
+    // position: relative;
+    width: 100%;
+    margin: 60px auto;
+
+    .article-container-left {
+      width: 80%;
+    }
+
+    .article-container-right {
+      // position: absolute;
+      width: 20%;
+      height: 1250px;
+      // border: 1px solid #000000;
+      box-shadow: 1px 1px 9px #000000;
+      background: #ffffff;
+      right: 0;
+      top: 0;
+      border-radius: 5px;
+      .article-popular-top {
+        text-align: center;
+        border-bottom: 1px solid #000000;
+      }
+
+      .article-popular-list {
+        width: 90%;
+
+        margin: 0 auto;
+      }
+      .article-Tag-btn {
+        margin-top: 100px;
+        margin-left: 10px;
+        .articleTagButton {
+          .article-Tag-popular {
+            font-size: 16px;
+          }
+          width: auto;
+          height: 40px;
+          margin: 10px 10px 10px 0;
+          background: #fecc2f;
+          border: none;
+          border-radius: 4px;
+          box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.7);
+
+          p {
+            padding: 10px;
+          }
+          &:hover {
+            background: #1178b8;
+            color: #ffffff;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .articles-container {
+    width: 100%;
+    .article-page {
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .articles-container {
+    width: 100%;
+    .articleCategory {
+      grid-template-columns: auto auto auto;
+      .articleCategoryButton {
+        margin-top: 20px;
+      }
+    }
+    .article-page {
+      width: 100%;
+      .article-container-left {
+        width: 100%;
+      }
+      .article-container-right {
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .articles-container {
+    width: 100%;
+    .articleCategory {
+      grid-template-columns: auto auto auto;
+      margin-left: 55px;
+      .articleCategoryButton {
+        margin-top: 20px;
+      }
+    }
+    .article-page {
+      width: 60%;
+      .article-container-left {
+        width: 100%;
+      }
+      .article-container-right {
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .articles-container {
+    width: 100%;
+    .articleCategory {
+      grid-template-columns: auto auto auto;
+      margin-left: 55px;
+      .articleCategoryButton {
+        margin-top: 20px;
+      }
+    }
+    .article-page {
+      width: 60%;
+      .article-container-left {
+        width: 100%;
+      }
+      .article-container-right {
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .articles-container {
+    width: 100%;
+    .articleCategory {
+      grid-template-columns: auto auto auto;
+      margin-left: 35px;
+      .articleCategoryButton {
+        margin-top: 20px;
+      }
+    }
+    .articleHomePageAdd {
+      margin-left: -25px;
+    }
+    .article-page {
+      width: 80%;
+      .article-container-left {
+        width: 100%;
+      }
+      .article-container-right {
+        display: none;
+      }
+    }
+  }
+}

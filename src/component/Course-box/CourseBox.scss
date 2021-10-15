@@ -1,0 +1,67 @@
+.courseBoxCover{
+position: absolute;
+background:white;
+opacity:.5;
+width:95%;
+height:100%;
+}
+.courseBox {
+  position: relative;
+  width: 95%;
+  line-height: 2.5rem;
+  border: 1px solid #1178B8;
+  margin: 5px 2.5px;
+  font-weight: bold;
+  transition: .5;
+  .courseBox:hover{
+    transform: translateY(-10px);
+    box-shadow: 2px 2px rgb(122, 122, 122);
+  }
+
+  .courseName , .coachName{
+    color: #1178B8;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 5px;
+  }
+
+  .courseName:hover , .coachName:hover{
+    background: #1178B8;
+    padding:0 5px;
+    border-radius: 5px;
+    color:white;
+    // font-size: 1.3rem;
+  }
+  .fullBooking{
+    border: transparent;
+    border-radius: 5px;
+    background: #D0104C;
+    color: white !important;
+    width:60%;
+    display: inline-block;
+    padding: 3px 0;
+  }
+ 
+}
+.popupBtn{
+  width: 20%;
+  padding:5px;
+  border-radius: 5px;
+  background: transparent;
+  margin:5px;
+  cursor: pointer;
+}
+.confirmBtn{
+  border:3px solid #1178B8;
+}
+.confirmBtn:hover{
+  background: #1178B8;
+  color: white;
+}
+.cancelBtn{
+  border:3px solid #D0104C;;
+}
+.cancelBtn:hover{
+  background: #D0104C;;
+  color:white;
+}

@@ -1,0 +1,124 @@
+.footer-wrapper {
+  position: absolute;
+  left: 0;
+  height: 60px;
+  width: 100vw;
+  margin: 0 auto;
+  background: black;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-family: 微軟正黑體;
+
+  .copyright {
+    flex: 1;
+    background: #fecc2f;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    p {
+      color: black;
+      font-size: 12px;
+      margin: 0 auto;
+    }
+  }
+  .address {
+    color: white;
+    font-size: 16px;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+  }
+  .triangle {
+    border-color: transparent transparent #fecc2f #fecc2f;
+    border-style: solid solid solid solid;
+    border-width: 30px 30px;
+    height: 0px;
+    width: 0px;
+  }
+  .icon {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 3vw;
+
+    a {
+      color: white;
+      margin-right: 20px;
+      font-size: 30px;
+      &:hover {
+        color: #fecc2f;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-wrapper {
+    height: 150px;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    .copyright {
+      font-size: 14px;
+      margin: 5px;
+      background: black;
+      height: auto;
+      p {
+        color: white;
+        font-size: 14px;
+        margin: 0 auto;
+      }
+    }
+    .triangle {
+      display: none;
+    }
+    .address {
+      font-size: 14px;
+      margin: 5px;
+    }
+    .icon {
+      justify-content: center;
+      padding: 0;
+      margin: 5px;
+      svg {
+        width: 50px;
+        height: 50px;
+      }
+      a {
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer-wrapper {
+    height: 180px;
+    .copyright {
+    }
+    .address {
+    }
+    .icon {
+      svg {
+      }
+      a {
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .footer-wrapper {
+    height: 180px;
+    .copyright {
+    }
+    .address {
+    }
+    .icon {
+      svg {
+      }
+      a {
+      }
+    }
+  }
+}

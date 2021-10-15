@@ -1,0 +1,187 @@
+$text: #000000;
+.masonry {
+  column-count: 3;
+  
+
+  .item {
+    break-inside: avoid;
+    .card-container {
+      display: block;
+      width: 300px;
+      height: 100%;
+      margin-bottom: 30px;
+      border-radius: 6px;
+      box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.7);
+      background-color: #fcfcfc;
+      &:hover {
+        border: 3px solid #1178b8;
+      }
+      .card-img-box {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        .card-img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+          object-position: 50% 10%;
+          padding: 2px;
+          display: block;
+
+          transform: scale(1, 1);
+          transition: all 1s ease-out;
+          &:hover {
+            transform: scale(1.2, 1.2);
+          }
+        }
+      }
+
+      .card-body {
+        width: 280px;
+        margin: 10px;
+
+        .card-body-top {
+          display: flex;
+          font-size: 12px;
+
+          .member-avatar {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 50%;
+            object-position: 50% 10%;
+            padding: 2px;
+            display: block;
+            background-color: #1178b8;
+            margin: 0 10px 0 0;
+          }
+          .homeTime {
+            font-size: 12px;
+            color: #4f4f4f;
+          }
+        }
+
+        .card-body-mid {
+          .articleTitle {
+            color: $text;
+            &:hover {
+              color: #fecc2f;
+            }
+          }
+          .article-top-line {
+            width: 280px;
+            height: 1px;
+            margin: 10px 0 0 0;
+            border-bottom: 1px solid #f0f0f0;
+            border-radius: 1px;
+          }
+
+          .card-category {
+            display: flex;
+            margin: 10px 0 10px 0;
+
+            .card-category-parent {
+              width: auto;
+              height: 20px;
+              transform: skew(-15deg);
+              position: relative;
+              z-index: 2;
+              background: #fecc2f;
+            }
+          }
+
+          .articleContent {
+            font-size: 12px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            color: #4f4f4f;
+          }
+
+          .card-tag {
+            display: flex;
+            margin: 10px 0 10px 0;
+
+            .card-tag1 {
+              margin: 0 5px 0 0;
+              widows: 20%;
+              height: 20px;
+              transform: skewX(-10deg);
+              position: relative;
+              z-index: 2;
+              // box-shadow: 3px 3px 6px black;
+              background: #fecc2f;
+            }
+
+            .card-tag2 {
+              widows: 20%;
+              height: 20px;
+              transform: skewX(-10deg);
+              position: relative;
+              z-index: 2;
+              // box-shadow: 3px 3px 6px black;
+              background: #fecc2f;
+            }
+          }
+        }
+
+        .card-body-mid > p {
+          font-size: 12px;
+        }
+        .article-under-line {
+          width: 280px;
+          height: 1px;
+          margin: 20px 0 0 0;
+          border-bottom: 1px solid #f0f0f0;
+          border-radius: 1px;
+        }
+        .card-body-under {
+          display: flex;
+          font-size: 12px;
+          margin-left: 180px;
+          margin-top: 2px;
+
+          .card-like {
+            display: flex;
+            margin-top: 1px;
+            .article-card-icon {
+              margin-top: 1px;
+            }
+          }
+          .card-comment {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+@media screen and (max-width: 768px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+@media screen and (max-width: 576px) {
+  .masonry {
+    column-count: 1;
+  }
+}
+@media screen and (max-width: 500px) {
+  .masonry {
+    column-count: 1;
+  }
+}
+@media screen and (max-width: 375px) {
+  .masonry {
+    column-count: 1;
+  }
+}

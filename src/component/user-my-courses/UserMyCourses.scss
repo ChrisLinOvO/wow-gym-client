@@ -1,0 +1,69 @@
+// .userCoursesInfoCover {
+//   background: white;
+//   opacity: 0.5;
+//   z-index: 2;
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+// }
+
+.userCoursesInfo {
+  display: flex;
+  list-style: none;
+  margin: 10px 0;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  ul:nth-child(2n) {
+    background: rgba(142, 142, 142, 0.2);
+  }
+
+  li {
+    font-size: 1.1rem;
+    width: 20%;
+    height: 40px;
+    text-align: center;
+    margin: 1rem;
+    border-radius: 10px;
+  }
+
+  .courseDayInUser,
+  .courseTimeInUser,
+  .courseCategoryInUser {
+    padding: 0.5rem;
+    border-radius: 10px;
+    display: inline-block;
+  }
+
+  .courseNameInUser,
+  .coachNameInUser {
+    color: #1178b8;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 0.5rem;
+  }
+
+  .courseNameInUser:hover,
+  .coachNameInUser:hover {
+    background: #1178b8;
+    color: white;
+  }
+
+  .userCourseBtn {
+    width: 17%;
+    position: relative;
+    cursor: pointer;
+
+    // .userCourseBtnCover {
+    //   width: 100%;
+    //   height: 100%;
+    //   position: absolute;
+    //   background: white;
+    //   opacity: 0.5;
+    //   top: 0;
+    //   left: 0;
+    // }
+  }
+}

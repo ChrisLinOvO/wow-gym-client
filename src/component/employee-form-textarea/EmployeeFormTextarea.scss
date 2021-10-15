@@ -1,0 +1,42 @@
+.label {
+  display: block;
+  margin: 30px 300px;
+
+  .textarea {
+    width: 80%;
+    height: 20vh;
+    vertical-align: middle;
+  }
+}
+
+.textarea-label {
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 992px) {
+  .label {
+    display: block;
+    margin: 30px 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .label {
+    display: block;
+    margin: 30px 90px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .label {
+    display: block;
+    margin: 30px auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .label {
+    display: block;
+    margin: 30px auto;
+  }
+}
