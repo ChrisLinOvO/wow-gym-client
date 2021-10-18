@@ -25,23 +25,23 @@ const OrderListDetail = (props) => {
   const Cancel = props.location.pathname === "/OrderList/Cancel";
 
   async function DelToSever(orderId) {
-    const fetchDeldata = axios.post(`http://localhost:5000/Orders/api/del/${orderId}`, {
+    const fetchDeldata = axios.post(`https://wow-gym.herokuapp.com/Orders/api/del/${orderId}`, {
       data: { orderId: orderId },
     });
     setdeldata(fetchDeldata)
   }
   const ListToSever = async (orderId) => {
     const product = await axios(
-      "http://localhost:5000/Orders/api/OrderListDeatail"
+      "https://wow-gym.herokuapp.com/Orders/api/OrderListDeatail"
     );
-    const address = await axios("http://localhost:5000/Orders/api/address");
+    const address = await axios("https://wow-gym.herokuapp.com/Orders/api/address");
     setaddress(address.data.filter((i) => i.orderId === orderId));
     sethiddenID(product.data.rows.filter((i) => i.orderId === orderId));
   };
 
   useEffect(() => {
     const FetchData = async () => {
-      const result = await axios("http://localhost:5000/Orders/api/OrderList");
+      const result = await axios("https://wow-gym.herokuapp.com/Orders/api/OrderList");
       setData(result.data);
     };
     FetchData();

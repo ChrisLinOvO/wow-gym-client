@@ -119,7 +119,7 @@ function EmployeeCentetModal({
 
       //編輯
       const request = new Request(
-        `http://localhost:5000/api/courses/${itemID}`,
+        `https://wow-gym.herokuapp.com/api/courses/${itemID}`,
         {
           method: "POST",
           body: JSON.stringify(row),

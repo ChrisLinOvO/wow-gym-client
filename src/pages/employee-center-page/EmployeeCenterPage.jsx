@@ -16,7 +16,7 @@ function EmployeeCenter({ currentEmployee }) {
   async function getEmployeeId() {
     // console.log(currentEmployee);
     const request = new Request(
-      `http://localhost:5000/api/employee/${currentEmployee.Eid}`,
+      `https://wow-gym.herokuapp.com/api/employee/${currentEmployee.Eid}`,
       {
         method: "GET",
         headers: new Headers({
@@ -33,7 +33,7 @@ function EmployeeCenter({ currentEmployee }) {
 
   async function getCourse() {
     const request = new Request(
-      `http://localhost:5000/api/employeecenter/${currentEmployee.Eid}`,
+      `https://wow-gym.herokuapp.com/api/employeecenter/${currentEmployee.Eid}`,
       {
         method: "GET",
         headers: new Headers({
@@ -127,7 +127,7 @@ function EmployeeCenter({ currentEmployee }) {
               <button
                 className="addcourse"
                 onClick={() => {
-                  window.location.replace("http://localhost:3000/employeeform");
+                  window.location.replace("https://wow-gym.herokuapp.com/employeeform");
                 }}
               >
                 課程上傳

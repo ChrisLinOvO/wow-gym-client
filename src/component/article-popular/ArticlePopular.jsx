@@ -12,7 +12,7 @@ function ArticlePopular(props) {
 
     // 注意header資料格式要設定，伺服器才知道是json格式
     const request = new Request(
-      `http://localhost:5000/api/articles/getHotData/1`,
+      `https://wow-gym.herokuapp.com/api/articles/getHotData/1`,
       {
         method: "GET",
         headers: new Headers({

@@ -10,7 +10,7 @@ const ServiceRecord = (props) => {
     // console.log(id);
     // 取回報紀錄列表
     async function getData() {
-        const request = new Request('http://localhost:5000/api/customerRoutes/', {
+        const request = new Request('https://wow-gym.herokuapp.com/api/customerRoutes/', {
             method: 'GET',
             headers: new Headers({
                 Accept: 'application/json', 'Content-Type': 'application/json',

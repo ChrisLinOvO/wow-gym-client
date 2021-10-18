@@ -51,7 +51,7 @@ const ArticlesPreview = (props) => {
   //取得文章資料
   useEffect(() => {
     const FetchData = async (id) => {
-      const result = await axios(`http://localhost:5000/api/articles/${id}`);
+      const result = await axios(`https://wow-gym.herokuapp.com/api/articles/${id}`);
       setData(result.data);
       console.log(result.data)
     };
@@ -65,7 +65,7 @@ const ArticlesPreview = (props) => {
     // 注意資料格式要設定，伺服器才知道是json格式
     console.log(item);
     const commentspost = axios.post(
-      `http://localhost:5000/api/articles/postComments/:articleId`,
+      `https://wow-gym.herokuapp.com/api/articles/postComments/:articleId`,
       {
         method: "POST",
         credentials: "include", // 需傳送 Cookie 必須開啟
@@ -92,7 +92,7 @@ const ArticlesPreview = (props) => {
   //取得留言
   async function getAddCommentsData() {
     const request = new Request(
-      `http://localhost:5000/api/articles/getComments/${props.match.params.articleId}`,
+      `https://wow-gym.herokuapp.com/api/articles/getComments/${props.match.params.articleId}`,
       {
         method: "GET",
         headers: new Headers({
@@ -120,7 +120,7 @@ const ArticlesPreview = (props) => {
   // 取得留言數
   async function getCommentsNumber() {
     const request = new Request(
-      `http://localhost:5000/api/articles/getCommentsNumber/${props.match.params.articleId}`,
+      `https://wow-gym.herokuapp.com/api/articles/getCommentsNumber/${props.match.params.articleId}`,
       {
         method: "GET",
         headers: new Headers({
@@ -148,7 +148,7 @@ const ArticlesPreview = (props) => {
     // 注意資料格式要設定，伺服器才知道是json格式
 
     const articleLikeData = axios.post(
-      `http://localhost:5000/api/articles/postArticleLikeUpdate`,
+      `https://wow-gym.herokuapp.com/api/articles/postArticleLikeUpdate`,
       {
         articleId: articleId,
         flag: flag

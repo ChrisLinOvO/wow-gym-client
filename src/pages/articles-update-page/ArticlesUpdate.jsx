@@ -60,7 +60,7 @@ function ArticlesUpdate(props) {
   useEffect(() => {
     const FetchData = async (articleId) => {
       const result = await axios(
-        `http://localhost:5000/api/articles/articleItem/${articleId}`
+        `https://wow-gym.herokuapp.com/api/articles/articleItem/${articleId}`
       );
       console.log(result);
       setData(result.data);
@@ -81,7 +81,7 @@ function ArticlesUpdate(props) {
 
     // 注意資料格式要設定，伺服器才知道是json格式
     axios.post(
-      `http://localhost:5000/api/articles/articlesUpdate/${articleId}`,
+      `https://wow-gym.herokuapp.com/api/articles/articlesUpdate/${articleId}`,
       {
         method: "POST",
         credentials: "include", // 需傳送 Cookie 必須開啟

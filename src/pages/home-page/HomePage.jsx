@@ -278,7 +278,7 @@ import { IoIosArrowDropupCircle } from "react-icons/io";
                       <br />
                       NEO (三條線運動上衣)
                     </h2>
-                    <a href="http://localhost:3000/shopitem/women/253" className="info">
+                    <a href="https://wow-gym.herokuapp.com/shopitem/women/253" className="info">
                       More
                     </a>
                   </div>
@@ -293,7 +293,7 @@ import { IoIosArrowDropupCircle } from "react-icons/io";
                       <br />
                       PRO SPORT (運動上衣)
                     </h2>
-                    <a href="http://localhost:3000/shopitem/women/259" className="info">
+                    <a href="https://wow-gym.herokuapp.com/shopitem/women/259" className="info">
                       More
                     </a>
                   </div>
@@ -308,7 +308,7 @@ import { IoIosArrowDropupCircle } from "react-icons/io";
                       <br />
                       FAKTEN (運動上衣)
                     </h2>
-                    <a href="http://localhost:3000/shopitem/women/238" className="info">
+                    <a href="https://wow-gym.herokuapp.com/shopitem/women/238" className="info">
                       More
                     </a>
                   </div>
@@ -323,7 +323,7 @@ import { IoIosArrowDropupCircle } from "react-icons/io";
                       <br />
                       ID (短袖上衣)
                     </h2>
-                    <a href="http://localhost:3000/shopitem/women/232" className="info">
+                    <a href="https://wow-gym.herokuapp.com/shopitem/women/232" className="info">
                       More
                     </a>
                   </div>
@@ -338,7 +338,7 @@ import { IoIosArrowDropupCircle } from "react-icons/io";
                       <br />
                       SHMOO 長袖
                     </h2>
-                    <a href='http://localhost:3000/shopitem/men/20' className="info">
+                    <a href='https://wow-gym.herokuapp.com/shopitem/men/20' className="info">
                       More
                     </a>
                   </div>
@@ -353,7 +353,7 @@ import { IoIosArrowDropupCircle } from "react-icons/io";
                       <br />
                       WORK OUT (背心){" "}
                     </h2>
-                    <a href="http://localhost:3000/shopitem/men/6" className="info">
+                    <a href="https://wow-gym.herokuapp.com/shopitem/men/6" className="info">
                       More
                     </a>
                   </div>
@@ -368,7 +368,7 @@ import { IoIosArrowDropupCircle } from "react-icons/io";
                       <br />
                       R.Y.V. (長袖){" "}
                     </h2>
-                    <a href="http://localhost:3000/shopitem/men/22" className="info">
+                    <a href="https://wow-gym.herokuapp.com/shopitem/men/22" className="info">
                       More
                     </a>
                   </div>
@@ -391,7 +391,7 @@ import { IoIosArrowDropupCircle } from "react-icons/io";
                       <br />
                       ID (運動長褲)
                     </h2>
-                    <a href="http://localhost:3000/shopitem/men/208" className="info">
+                    <a href="https://wow-gym.herokuapp.com/shopitem/men/208" className="info">
                       More
                     </a>
                   </div>
@@ -409,7 +409,7 @@ import { IoIosArrowDropupCircle } from "react-icons/io";
                       <br />
                       LONG RUN (運動長褲)
                     </h2>
-                    <a href="http://localhost:3000/shopitem/men/214" className="info">
+                    <a href="https://wow-gym.herokuapp.com/shopitem/men/214" className="info">
                       More
                     </a>
                   </div>
@@ -427,7 +427,7 @@ import { IoIosArrowDropupCircle } from "react-icons/io";
                       <br />
                       ESSENTIALS (運動短褲)
                     </h2>
-                    <a href="http://localhost:3000/shopitem/men/218" className="info">
+                    <a href="https://wow-gym.herokuapp.com/shopitem/men/218" className="info">
                       More
                     </a>
                   </div>
@@ -446,7 +446,7 @@ import { IoIosArrowDropupCircle } from "react-icons/io";
                       <br />
                       NEO (運動短褲)
                     </h2>
-                    <a href="http://localhost:3000/shopitem/men/226" className="info">
+                    <a href="https://wow-gym.herokuapp.com/shopitem/men/226" className="info">
                       More
                     </a>
                   </div>
@@ -461,7 +461,7 @@ import { IoIosArrowDropupCircle } from "react-icons/io";
                       <br />
                       ID SPORT (短褲)
                     </h2>
-                    <a href="http://localhost:3000/shopitem/men/51" className="info">
+                    <a href="https://wow-gym.herokuapp.com/shopitem/men/51" className="info">
                       More
                     </a>
                   </div>
@@ -479,7 +479,7 @@ import { IoIosArrowDropupCircle } from "react-icons/io";
                       <br />
                       LOGO (短褲)
                     </h2>
-                    <a href="http://localhost:3000/shopitem/men/53" className="info">
+                    <a href="https://wow-gym.herokuapp.com/shopitem/men/53" className="info">
                       More
                     </a>
                   </div>
@@ -497,7 +497,7 @@ import { IoIosArrowDropupCircle } from "react-icons/io";
                       <br />
                       ADICOLOR (運動長褲)
                     </h2>
-                    <a href="http://localhost:3000/shopitem/men/34" className="info">
+                    <a href="https://wow-gym.herokuapp.com/shopitem/men/34" className="info">
                       More
                     </a>
                   </div>

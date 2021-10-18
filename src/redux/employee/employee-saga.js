@@ -6,7 +6,7 @@ import { employeeListSuccess, employeeListFailure } from "./employee-action";
 
 export function* employeeListAsyncSaga() {
   try {
-    const { data } = yield axios.get("http://localhost:5000/api/employee");
+    const { data } = yield axios.get("https://wow-gym.herokuapp.com/api/employee");
     yield put(employeeListSuccess(data));
   } catch (err) {
     yield put(employeeListFailure(err));

@@ -25,7 +25,7 @@ function UserCourses(props) {
 
     //Fetch 預約資料
     async function getUserBooking() {
-        const request = new Request("http://localhost:5000/api/courses/bookingData", {
+        const request = new Request("https://wow-gym.herokuapp.com/api/courses/bookingData", {
             method: 'GET',
             body: JSON.stringify(),
             headers: new Headers({
@@ -46,7 +46,7 @@ function UserCourses(props) {
     async function getCoursesDataInAllUser() {
         // 開啟載入指
         // 注意header資料格式要設定，伺服器才知道是json格式
-        const request = new Request("http://localhost:5000/api/courses/memberBookingData", {
+        const request = new Request("https://wow-gym.herokuapp.com/api/courses/memberBookingData", {
             method: "GET",
             headers: new Headers({
                 Accept: "application/json",

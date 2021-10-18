@@ -27,7 +27,7 @@ const ServiceCreate = ({ onClick, currentUserData, history }) => {
     // let name, phonenumber, email, title
 
     async function createlist(props) {
-        const request = new Request('http://localhost:5000/api/customerRoutes', {
+        const request = new Request('https://wow-gym.herokuapp.com/api/customerRoutes', {
             method: 'POST',
             headers: new Headers({
                 Accept: 'application/json', 'Content-Type': 'application/json',

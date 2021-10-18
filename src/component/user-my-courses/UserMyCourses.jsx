@@ -43,7 +43,7 @@ function UserMyCourses(props) {
         const updateBookingJson = {
             bookingState: 0
         }
-        const request = new Request(`http://localhost:5000/api/courses/bookingData/${userBookingId}`, {
+        const request = new Request(`https://wow-gym.herokuapp.com/api/courses/bookingData/${userBookingId}`, {
             method: 'POST',
             body: JSON.stringify(updateBookingJson),
             headers: new Headers({
@@ -58,7 +58,7 @@ function UserMyCourses(props) {
         const reduceNumJson = {
             courseId: thisCourseId,
         }
-        const req = new Request(`http://localhost:5000/api/courses/data`, {
+        const req = new Request(`https://wow-gym.herokuapp.com/api/courses/data`, {
             method: 'POST',
             body: JSON.stringify(reduceNumJson),
             headers: new Headers({
