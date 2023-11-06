@@ -38,7 +38,7 @@ function UserEdit({ currentUserSelect, userPath }) {
 
   async function AddFromToServer(e) {
     const user = await axios.post(
-      "https://wow-gym.herokuapp.com/api/user/profile/UpdateUser",
+      "https://wow-gym.onrender.com/api/user/profile/UpdateUser",
       {
         data: {
           memberName,
@@ -62,7 +62,7 @@ function UserEdit({ currentUserSelect, userPath }) {
   useEffect(() => {
     const FetchData = async () => {
       const result = await axios(
-        `https://wow-gym.herokuapp.com/api/user/profile/${memberid}`
+        `https://wow-gym.onrender.com/api/user/profile/${memberid}`
       );
       // console.log('test',result.data.memberItem.membersRow)
       setMember(result.data.memberItem.membersRow);

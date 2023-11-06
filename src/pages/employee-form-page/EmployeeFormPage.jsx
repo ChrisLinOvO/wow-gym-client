@@ -48,7 +48,7 @@ function EmployeeForm({ currentEmployee ,history}) {
       courseQuoda: quota,
     };
 
-    const request = new Request("https://wow-gym.herokuapp.com/api/courses", {
+    const request = new Request("https://wow-gym.onrender.com/api/courses", {
       method: "POST",
       body: JSON.stringify(row),
       headers: new Headers({

@@ -16,7 +16,7 @@ const OrderCompleted = ({ history }) => {
     useEffect(() => {
         const FetchData = async () => {
             const result = await axios(
-                `https://wow-gym.herokuapp.com/Orders/api/OrderCompeleted`,
+                `https://wow-gym.onrender.com/Orders/api/OrderCompeleted`,
                 {
                     method: 'GET',
                     credentials: 'include', // 需傳送 Cookie 必須開啟
@@ -34,9 +34,9 @@ const OrderCompleted = ({ history }) => {
     useEffect(() => {
         const ListToSever = async () => {
             const product = await axios(
-                "https://wow-gym.herokuapp.com/Orders/api/OrderListDeatail"
+                "https://wow-gym.onrender.com/Orders/api/OrderListDeatail"
             );
-            const address = await axios("https://wow-gym.herokuapp.com/Orders/api/address");
+            const address = await axios("https://wow-gym.onrender.com/Orders/api/address");
 
             setitem(product.data.rows.filter((i) => i.orderId === Value));
             setaddress(address.data.filter((i) => i.orderId === Value));

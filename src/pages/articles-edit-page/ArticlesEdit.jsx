@@ -25,7 +25,7 @@ function ArticlesEdit({ currentUserData }) {
   useEffect(() => {
     const FetchData = async () => {
       const result = await axios(
-        `https://wow-gym.herokuapp.com/api/articles/member/${mId}`
+        `https://wow-gym.onrender.com/api/articles/member/${mId}`
       );
       setData(result.data);
       // console.log(result)
@@ -46,7 +46,7 @@ function ArticlesEdit({ currentUserData }) {
 
     // 注意header資料格式要設定，伺服器才知道是json格式
     const request = new Request(
-      `https://wow-gym.herokuapp.com/api/articles/articlesEdit/${id}`,
+      `https://wow-gym.onrender.com/api/articles/articlesEdit/${id}`,
       {
         method: "DELETE",
         headers: new Headers({

@@ -19,7 +19,7 @@ function CourseButton({ currentEmployee, itemID,history }) {
   //刪除
   async function handleDelete() {
       const request = new Request(
-        `https://wow-gym.herokuapp.com/api/courses/${itemID}`,
+        `https://wow-gym.onrender.com/api/courses/${itemID}`,
         {
           method: "DELETE",
           headers: new Headers({
@@ -38,7 +38,7 @@ function CourseButton({ currentEmployee, itemID,history }) {
   useEffect(() => {
     const getCourseID = async()=> {
       const request = new Request(
-        `https://wow-gym.herokuapp.com/api/employeecenter/${currentEmployee.Eid}`,
+        `https://wow-gym.onrender.com/api/employeecenter/${currentEmployee.Eid}`,
         {
           method: "GET",
           headers: new Headers({

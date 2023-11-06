@@ -32,7 +32,7 @@ function Courses(props) {
 
   async function getCoursesData() {
 
-    const response = await fetch("https://wow-gym.herokuapp.com/api/courses/data");
+    const response = await fetch("https://wow-gym.onrender.com/api/courses/data");
     const data = await response.json();
     setAllCourses(data)
 
@@ -41,7 +41,7 @@ function Courses(props) {
   async function getCategoryData() {
     // 開啟載入指示
     // 注意header資料格式要設定，伺服器才知道是json格式
-    const request = new Request("https://wow-gym.herokuapp.com/api/category", {
+    const request = new Request("https://wow-gym.onrender.com/api/category", {
       method: "GET",
       headers: new Headers({
         Accept: "application/json",
@@ -59,7 +59,7 @@ function Courses(props) {
   // //Fetch 預約資料
 
   async function getBookingData() {
-    const request = new Request("https://wow-gym.herokuapp.com/api/courses/bookingData", {
+    const request = new Request("https://wow-gym.onrender.com/api/courses/bookingData", {
       method: 'GET',
       body: JSON.stringify(),
       headers: new Headers({

@@ -30,7 +30,7 @@ const FaqList = (props) => {
         setSearchValue(e.target.value.toUpperCase())
     }
     const getData = async () => {
-        const request = new Request('https://wow-gym.herokuapp.com/api/customerRoutes/faqlist', {
+        const request = new Request('https://wow-gym.onrender.com/api/customerRoutes/faqlist', {
             method: 'GET',
             headers: new Headers({
                 Accept: 'application/json', 'Content-Type': 'application/json',

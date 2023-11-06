@@ -3,6 +3,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Backend server repository: [Click me](https://github.com/ChrisLinOvO/wow-gym-server)
 
+[Demo Link](https://wow-gym.onrender.com/)
+
 # 資策會 MFEE07 大專題 
 ### 複合型健身房官方網站「WoW FIT」
 

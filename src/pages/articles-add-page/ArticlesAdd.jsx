@@ -55,7 +55,7 @@ function ArticlesAdd(props) {
   async function addArticleToSever(item) {
     // 注意資料格式要設定，伺服器才知道是json格式
     // console.log(item);
-    axios.post(`https://wow-gym.herokuapp.com/api/articles/add`, {
+    axios.post(`https://wow-gym.onrender.com/api/articles/add`, {
       method: "POST",
       credentials: "include", // 需傳送 Cookie 必須開啟
       headers: new Headers({

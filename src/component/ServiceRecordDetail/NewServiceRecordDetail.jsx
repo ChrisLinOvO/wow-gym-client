@@ -18,7 +18,7 @@ const ServiceRecordDetail = (props) => {
 
     // 取對話資訊
     async function getReplyData() {
-        const request = new Request('https://wow-gym.herokuapp.com/api/customerRoutes/getreplylist', {
+        const request = new Request('https://wow-gym.onrender.com/api/customerRoutes/getreplylist', {
             method: 'GET',
             headers: new Headers({
                 Accept: 'application/json', 'Content-Type': 'application/json',
@@ -37,7 +37,7 @@ const ServiceRecordDetail = (props) => {
         if (userInput === '') {
             Swal.fire("請輸入對話!")
         } else {
-            const request = new Request('https://wow-gym.herokuapp.com/api/customerRoutes/test', {
+            const request = new Request('https://wow-gym.onrender.com/api/customerRoutes/test', {
                 method: 'POST',
                 headers: new Headers({
                     Accept: 'application/json', 'Content-Type': 'application/json',

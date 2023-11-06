@@ -14,7 +14,7 @@ const ArticleCard = (props) => {
   //取得個別文章資料
   function handleClick(articleId) {
     const result = axios.get(
-      `https://wow-gym.herokuapp.com/api/articles/${articleId}`,
+      `https://wow-gym.onrender.com/api/articles/${articleId}`,
       {
         method: "GET",
         credentials: "include", // 需傳送 Cookie 必須開啟

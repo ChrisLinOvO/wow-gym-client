@@ -37,7 +37,7 @@ function CourseBox(props) {
         const addNumPost = {
             courseId: getThisCourseId,
         }
-        const req = new Request("https://wow-gym.herokuapp.com/api/courses/addNumOfCourse", {
+        const req = new Request("https://wow-gym.onrender.com/api/courses/addNumOfCourse", {
             method: 'POST',
             body: JSON.stringify(addNumPost),
             headers: new Headers({
@@ -56,7 +56,7 @@ function CourseBox(props) {
             memberId: currentUserId,
             courseId: getThisCourseId
         }
-        const request = new Request("https://wow-gym.herokuapp.com/api/courses/bookingData", {
+        const request = new Request("https://wow-gym.onrender.com/api/courses/bookingData", {
             method: 'POST',
             body: JSON.stringify(bookingPost),
             headers: new Headers({
@@ -82,7 +82,7 @@ function CourseBox(props) {
         const updateBookingJson = {
             bookingState: 0
         }
-        const request = new Request(`https://wow-gym.herokuapp.com/api/courses/bookingData/${thisCanceled}`, {
+        const request = new Request(`https://wow-gym.onrender.com/api/courses/bookingData/${thisCanceled}`, {
             method: 'POST',
             body: JSON.stringify(updateBookingJson),
             headers: new Headers({
@@ -100,7 +100,7 @@ function CourseBox(props) {
         const reduceNumJson = {
             courseId: getThisCourseId,
         }
-        const req = new Request(`https://wow-gym.herokuapp.com/api/courses/data`, {
+        const req = new Request(`https://wow-gym.onrender.com/api/courses/data`, {
             method: 'POST',
             body: JSON.stringify(reduceNumJson),
             headers: new Headers({

@@ -18,7 +18,7 @@ import { currentUserSelect } from "../../redux/user/user-selector";
 async function addToSever(item) {
     // 注意資料格式要設定，伺服器才知道是json格式
     // console.log(item);
-    await axios.post(`https://wow-gym.herokuapp.com/Orders/api/addCheckOutPage`, {
+    await axios.post(`https://wow-gym.onrender.com/Orders/api/addCheckOutPage`, {
         method: "POST",
         credentials: "include", // 需傳送 Cookie 必須開啟
         headers: new Headers({
@@ -48,7 +48,7 @@ async function addToSever(item) {
 async function additemToSever(cartItems, Total, Member) {
     // 注意資料格式要設定，伺服器才知道是json格式
     // console.log(cartItems);
-    await axios.post(`https://wow-gym.herokuapp.com/Orders/api/additem`, {
+    await axios.post(`https://wow-gym.onrender.com/Orders/api/additem`, {
         method: "POST",
         credentials: "include", // 需傳送 Cookie 必須開啟
         headers: new Headers({
@@ -63,7 +63,7 @@ async function additemToSever(cartItems, Total, Member) {
 async function addordersToSever(item) {
     // 注意資料格式要設定，伺服器才知道是json格式
     // console.log(cartItems);
-    await axios.post(`https://wow-gym.herokuapp.com/Orders/api/orders`, {
+    await axios.post(`https://wow-gym.onrender.com/Orders/api/orders`, {
         method: "POST",
         credentials: "include", // 需傳送 Cookie 必須開啟
         headers: new Headers({

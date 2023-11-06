@@ -10,7 +10,7 @@ function Coaches(props) {
     // 開啟載入指示
     // setDataLoading(true)
     // 注意header資料格式要設定，伺服器才知道是json格式
-    const request = new Request("https://wow-gym.herokuapp.com/api/employee", {
+    const request = new Request("https://wow-gym.onrender.com/api/employee", {
       method: "GET",
       headers: new Headers({
         Accept: "application/json",
